@@ -2,11 +2,10 @@
 # Libraries Improt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
-# Data collection
-path = '/House price prediction model/Housing.csv'
-data = pd.read_csv(path)
+# Data Import
+
+data = pd.read_csv('Housing.csv')
 price = np.array(data['price'])
 area = np.array(data['area'])
 bedrooms = np.array(data['bedrooms'])
